@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Valentine's Day!</title>
+<style>
+  body, html {
+    height: 100%;
+    margin: 0;
+    background-image: url('https://raw.githubusercontent.com/my-project-aws/surprise/main/hearts.webp'); /* Main background image */
+    background-size: cover; /* Cover the entire screen */
+    background-repeat: no-repeat; /* Main image does not repeat */
+    background-attachment: fixed; /* Main image is fixed */
+    background-position: center; /* Main image centered */
+    color: #fff; /* White text color for better readability */
+    opacity: 0.8; /* Makes the image semi-transparent */
+  }
+
+  .personal-image {
+    position: absolute;
+    top: 50%; /* Center vertically */
+    left: 10px; /* Align to the left side */
+    transform: translateY(-50%); /* Center it vertically */
+    z-index: 0; /* Ensure it's behind the message */
+    border-radius: 50%; /* Makes the image round */
+    width: 500px; /* Adjust width as needed */
+    height: 500px /* Maintain aspect ratio */
+    object-fit: cover;
+  }
+
+  .message {
+    position: absolute;
+    top: 50%; /* Center vertically */
+    right: 5%; /* 5% from the right edge */
+    transform: translateY(-50%);
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    text-align: center;
+    color: white;
+    padding: 2rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 80%;
+    animation: pulse 2s infinite;
+    z-index: 1; /* Ensure the message is above the personal image */
+  }
+
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.05);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+  h1 {
+    font-size: 2.5rem;
+    color: #ffcccb;
+    text-shadow: 2px 2px 4px #000000;
+  }
+
+  p {
+    font-size: 1.5rem;
+    margin-top: 0.5rem;
+  }
+
+</style>
+</head>
+<body>
+
+<img src="https://raw.githubusercontent.com/my-project-aws/surprise/main/aishu.webp" class="personal-image" alt="Personal Image" <!-- Personal image with inline styling for width -->
+
+<div class="message">
+  <h1>Happy Valentine's Day!</h1>
+  <p>I hope your day is as amazing as you are!</p>
+</div>
+
+</body>
+</html>
